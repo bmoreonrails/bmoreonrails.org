@@ -1,0 +1,105 @@
+%article
+  %section#team
+    #leader
+      .column5
+        = image_tag 'logomark.svg', alt: 'logo mark', id: 'logomark'
+      .column12
+        %h1
+          Bmore on Rails is a community of Baltimore folks who use the Ruby programming language and the Ruby on Rails framework.
+
+    = render partial: "pages/members"
+
+  #calendar
+    %section
+      .container
+        .column18.line
+          %h2.calendar.icon
+
+        .column9.offset1.push
+          .row
+            .column6
+              %h3 OPEN SOURCE HACK NIGHT
+            .column12
+              %p.subtitle TUES, JULY 23 @ 7:00PM
+              %p.address
+                Beehive Baltimore
+                &bull; 2400 Boston St. #308
+              %p Come prepared with an idea or two of some open source ruby that you'd like to hack on, be it a brand new gem, a new feature in an old gem, or just some bug fixing. Come prepared to help someone else out with their idea. There is no minimum skill level, so if you are still new to Ruby that's okay! Dinner is provided; feel free to bring beverages of your own.
+
+          .row
+            .column6
+              %h3.subspace PUB NIGHT FUN
+            .column12
+              %p.subtitle.space TUES, AUGUST 6 @ 7:00PM
+              %p.address
+                Rye
+                &bull; 807 S. Broadway
+              %p Come join the Bmore on Rails crew for an evening of revelry and merriment. All are welcome at Rye in Fells Point. This is an opportunity to meet the local Ruby community in a relaxed, social environment.
+
+          .row
+            .column6
+              %h3.subspace BMORE ON RAILS MONTHLY MEETUP
+            .column12
+              %p.subtitle.space TUES, AUGUST 13 @ 7:00PM
+              %p.address
+                MDLogix
+                &bull; 1216 E. Baltimore St.
+              %p Come prepared with an idea or two of some open source ruby that you'd like to hack on, be it a brand new gem, a new feature in an old gem, or just some bug fixing. Come prepared to help someone else out with their idea. There is no minimum skill level, so if you are still new to Ruby that's okay! Dinner is provided; feel free to bring beverages of your own.
+
+        .column6.offset1
+          %a{'href' => 'https://twitter.com/bmoreonrails', 'data-widget-id' => '357170999688577024', 'class' => 'twitter-timeline', 'data-chrome' => 'noheader nofooter noborders transparent', 'height' => mobile? ? 200 : 480, 'width' => '100%'}  Tweets by @bmoreonrails
+          :javascript
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs")
+
+  #sponsors
+    %section
+      .container
+        .column18.line
+          %h2.sponsors.icon
+
+        .column6.first
+          %a{href: 'http://www.mdlogix.com', title: 'mdlogix'}
+            = image_tag 'mdlogix_275.png', alt: 'mdlogix Logo', class: 'logos'
+        .column6
+          %a{href: 'http://smartlogicsolutions.com/', title: 'smartlogic'}
+            = image_tag 'smartlogic_275.png', alt: 'Smart Logic Logo', class: 'logos'
+        .column6
+          %a{href: 'http://www.inthebackforty.com/', title: 'Back Forty'}
+            = image_tag 'backforty_275.png', alt: 'Back Forty Logo', class: 'logos'
+
+  %section#location.mapfooter
+    %h2.map.icon
+    .background
+
+    #address
+      .row
+        .column8
+          %p
+            Meetings @ MDLogix
+            %br/
+            1216 E. Baltimore St.
+            %br/
+            Baltimore, MD 21202
+
+        .column9
+          %p
+            Hack Nights @ Beehive Baltimore
+            %br/
+            2400 Boston St. #308
+            %br/
+            Baltimore, MD 21224
+
+      .row.text
+        .column8
+          %p
+            Pub Nights @ Rye
+            %br/
+            807 S. Broadway
+            %br/
+            Baltimore, MD 21231
+
+        .column9
+          %p
+            Join Us!
+            %br/
+            %a{href: 'http://www.meetup.com/bmore-on-rails', title: 'Our Meetup Page'} meetup.com/bmore-on-rails
