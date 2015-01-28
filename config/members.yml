@@ -1,140 +1,169 @@
+# list is weighted for diversity purposes. White guys get 0.3 and everyone else gets a higher weight.
 -
   name:        'Jonathan Julian'
   github_name: 'jjulian'
   twitter:     'jonathanjulian'
   avatar_file: 'highres_63361972.jpeg'
+  list_weight: 0.3
 -
   name:        'Ed Schmalzle'
   github_name: 'nerdEd'
   twitter:     'nerded'
   avatar_file: 'highres_142603252.jpeg'
+  list_weight: 0.3
 -
   name:        'Chris Strom'
   github_name: 'eee-c'
   twitter:     'eee_c'
   avatar_file: 'highres_15379281.jpeg'
+  list_weight: 0.3
 -
   name:        'Paul Barry'
   github_name: 'pjb3'
   twitter:     'pjb3'
   avatar_file: 'highres_10191791.jpeg'
+  list_weight: 0.3
 -
   name:        'Nicholas A. Evans'
   github_name: 'nevans'
   twitter:     'nick_evans'
   avatar_file: 'highres_12726567.jpeg'
+  list_weight: 0.3
 -
   name:        'Mike Subelsky'
   github_name: 'subelsky'
   twitter:     'subelsky'
   avatar_file: 'highres_10332827.jpeg'
+  list_weight: 0.3
 -
   name:        'Doug Price'
   github_name: 'solipet'
   twitter:     'solipet'
   avatar_file: 'highres_131273832.jpeg'
+  list_weight: 0.3
 -
   name:        'David Raynes'
   github_name: 'rayners'
   twitter:     'rayners'
   avatar_file: 'highres_2808061.jpeg'
+  list_weight: 0.3
 -
   name:        'Jason Denney'
   github_name: 'spacemunkay'
   twitter:     'denneyjason'
   avatar_file: 'highres_5906224.jpeg'
+  list_weight: 0.3
 -
   name:        'Greg Gershman'
   github_name: 'greggersh'
   twitter:     'greggersh'
   avatar_file: 'highres_7197148.jpeg'
+  list_weight: 0.3
 -
   name:        'Tom von Schwerdtner'
   github_name: 'tvon'
   twitter:     'tvon'
   avatar_file: 'highres_8018692.jpeg'
+  list_weight: 0.3
 -
   name:        'Flip Sasser'
   github_name: 'flipsasser'
   twitter:     'flipsasser'
   avatar_file: 'highres_9537221.jpeg'
+  list_weight: 0.3
 -
   name:        'Matt Menefee'
   github_name: ''
   twitter:     ''
   avatar_file: 'highres_10107737.jpeg'
+  list_weight: 0.3
 -
   name:        'Gary Moore'
   github_name: 'gmoore'
   twitter:     'gsmoore'
   avatar_file: 'highres_10120518.jpeg'
+  list_weight: 0.3
 -
   name:        'Ryan Ahearn'
   github_name: 'rahearn'
   twitter:     'rcahearn'
   avatar_file: 'highres_11379776.jpeg'
+  list_weight: 0.3
 -
   name:        'Eric Oestrich'
   github_name: 'oestrich'
   twitter:     'ericoestrich'
   avatar_file: 'highres_11399610.jpeg'
+  list_weight: 0.3
 -
   name:        'Brian Sierakowski'
   github_name: 'BSierakowski'
   twitter:     'bsierakowski'
   avatar_file: 'highres_12123158.jpeg'
+  list_weight: 0.3
 -
   name:        'Ali Ibrahim'
   github_name: 'alimi'
   twitter:     'alimeye'
   avatar_file: 'highres_17464371.jpeg'
+  list_weight: 0.9
 -
   name:        'Kate Bladow'
   github_name: 'kbladow'
   twitter:     'kbladow'
   avatar_file: 'highres_60084462.jpeg'
+  list_weight: 0.9
 -
   name:        'Jared Koumentis'
   github_name: 'ShepBook'
   twitter:     'ShepBook'
   avatar_file: 'highres_61932272.jpeg'
+  list_weight: 0.3
 -
   name:        'Scott Steele'
   github_name: 'scooter-dangle'
   twitter:     ''
   avatar_file: 'highres_100154322.jpeg'
+  list_weight: 0.3
 -
   name:        'Dan Martens'
   github_name: 'danmartens'
   twitter:     'danmartens'
   avatar_file: 'highres_108106642.jpeg'
+  list_weight: 0.3
 -
   name:        'Avdi Grimm'
   github_name: 'avdi'
   twitter:     'avdi'
   avatar_file: 'member_57932012.jpeg'
+  list_weight: 0.3
 -
   name:        'Chase Gilliam'
   github_name: 'Ch4s3'
   twitter:     'chasegilliam'
   avatar_file: 'member_127440262.jpeg'
+  list_weight: 0.3
 -
   name:        'Josh Hepworth'
   github_name: 'joshhepworth'
   twitter:     'josh_hepworth'
   avatar_file: 'member_21723331.jpeg'
+  list_weight: 0.3
 -
   name:        'Brigitte Warner'
   github_name: 'brigittewarner'
   twitter:     'BrigitteWarner'
   avatar_file: 'highres_102319752.jpeg'
+  list_weight: 0.9
 -
   name:        'Natasha Jones'
   github_name: 'latazzajones'
   twitter:     'latazzajones'
   avatar_file: 'highres_232257082.jpeg'
+  list_weight: 0.9
 -
   name:        'Jameel Davidson'
   github_name: ''
   twitter:     ''
   avatar_file: 'IMG_0399.PNG'
+  list_weight: 0.9
