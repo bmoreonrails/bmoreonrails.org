@@ -33,4 +33,7 @@ BmoreonrailsOrg::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  # run tests in random order
+  config.active_support.test_order = :random
 end
