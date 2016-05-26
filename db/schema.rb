@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130827195321) do
+ActiveRecord::Schema.define(version: 20160525000215) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "meetups", force: true do |t|
+  create_table "meetups", force: :cascade do |t|
     t.string   "remote_id",       null: false
     t.string   "event_url",       null: false
     t.text     "description"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20130827195321) do
     t.string   "venue_zip"
     t.float    "venue_lon"
     t.float    "venue_lat"
+    t.datetime "created_at"
   end
 
 end
