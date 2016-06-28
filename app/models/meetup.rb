@@ -15,7 +15,7 @@ class Meetup < ActiveRecord::Base
   def self.update
     fetch_upcoming_meetups.each do |api_meetup|
       api_venue = api_meetup['venue']
-      new_meetup = Meetup.find_or_initialize_by_remote_id(remote_id: api_meetup['id'])
+      new_meetup = Meetup.find_or_initialize_by(remote_id: api_meetup['id'])
       new_meetup.update_attributes(
         event_url: api_meetup['event_url'],
         description: api_meetup['description'],
