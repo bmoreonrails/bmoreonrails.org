@@ -2,6 +2,7 @@
 @import "sections/calendar";
 @import "sections/sponsors";
 @import "sections/team";
+@import "sections/slack";
 
 .container {
   p {
@@ -56,6 +57,24 @@
     }
   }
 
+}
+
+.flashContainer {
+  text-align: center;
+  font-size: 130%;
+  margin: 1em 0;
+
+  &.error {
+    border: 5px solid #cc0000;
+    color: #cc0000;
+    background-color: #ffcccc;
+  }
+
+  &.info {
+    border: 5px solid #009900;
+    background-color: #ccddcc;
+    color: #009900;
+  }
 }
 
 header {

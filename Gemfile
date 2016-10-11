@@ -15,6 +15,7 @@ gem 'unicorn-rails'
 gem 'turbolinks'
 gem 'faraday'
 gem 'hashie'
+gem 'httparty'
 
 group :doc do
   gem 'sdoc', require: false

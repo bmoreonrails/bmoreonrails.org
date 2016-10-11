@@ -25,6 +25,11 @@
               %li#join
                 %a{href: root_path, title: 'home'} Home
 
+      - unless flash.empty?
+        - flash.keys.each do |k|
+          .column18.flashContainer{class: k}
+            %p= flash[k]
+
       = yield
 
       %footer
