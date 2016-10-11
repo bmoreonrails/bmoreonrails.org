@@ -13,7 +13,7 @@ class SlackController < ApplicationController
         flash[:error] = 'Hmmm, looks like something went terribly wrong. Ping @bmoreonrails for help.'
       end
     else
-      flash[:error] = 'Hmmm, looks like something went terribly wrong'
+      flash[:error] = 'Hmmm, looks like something went terribly wrong. Ping @bmoreonrails for help.'
     end
 
     redirect_to root_path
