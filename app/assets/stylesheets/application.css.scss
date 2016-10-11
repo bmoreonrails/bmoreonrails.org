@@ -58,6 +58,19 @@
 
 }
 
+.flashContainer {
+  text-align: center;
+  font-size: 130%;
+
+  &.error {
+    background-color: #FB777E;
+  }
+
+  &.info {
+    background-color: #C9F072;
+  }
+}
+
 header {
   background-color: #CD2027;
   height: 5em;

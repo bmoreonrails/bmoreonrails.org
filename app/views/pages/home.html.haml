@@ -24,6 +24,11 @@
           .pixel
             = member_avatar @members.shift if pix
 
+  .large-content
+    = form_tag slack_invite_url do
+      = email_field_tag :email
+      = submit_tag 'Get Your Invite!'
+
   #calendar.large-content
     %section
       .container
