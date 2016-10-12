@@ -1,0 +1,13 @@
+#sponsors {
+  margin-top: 2em;
+  text-align: center;
+
+  .logos {
+    padding-top: 2em;
+    width: 85%;
+
+    @include mobile{
+      width: 40%;
+    }
+  }
+}
