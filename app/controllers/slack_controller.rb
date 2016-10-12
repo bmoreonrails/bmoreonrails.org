@@ -4,12 +4,12 @@ class SlackController < ApplicationController
                                                token: slack_token,
                                                set_active: true})
     error_msg = 'Hmmm, looks like something went terribly wrong. Ping @bmoreonrails for help.'
-    if response.response.code  == 200
+    if response.response.code == '200'
       body = JSON.parse(response.body)
       if body["ok"]
         flash[:info] = 'Awesome, check your email for an invite!'
       elsif body["error"] == 'already_invited'
-        flash[:error] = 'Yikes, looks like you were already invited... check your email.'
+        flash[:error] = 'Yikes! Looks like you were already invited... check your email.'
       else
         flash[:error] = error_msg
       end
