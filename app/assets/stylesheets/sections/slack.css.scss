@@ -1,13 +1,33 @@
-#sponsors {
+#slack-invite {
   margin-top: 2em;
   text-align: center;
-
-  .logos {
-    padding-top: 2em;
-    width: 85%;
-
-    @include mobile{
-      width: 40%;
+  p {
+    color: $red;
+    font-family: EB Garamond, $serif;
+    font-size: 180%;
+    line-height: 1.25em;
+    text-align: left;
+  }
+  form {
+    color: $red;
+    font-family: EB Garamond, $serif;
+    font-size: 180%;
+    input[type=email] {
+      line-height: 1.25em;
+      width: 11em;
+      font-size: 100%;
+      text-align: center;
+      color: $red;
+      border: none;
+      border-bottom: 2px solid $red;
+    }
+    input[type=submit] {
+      border: none;
+      background-color: $red;
+      color: #ffffff;      
+      padding: 10px;
+      font-size: 80%;
+      cursor: pointer;
     }
   }
 }
