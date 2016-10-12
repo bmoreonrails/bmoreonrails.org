@@ -3,6 +3,7 @@ class SlackController < ApplicationController
     response = HTTParty.post(slack_url, body: {email: params[:email],
                                                token: slack_token,
                                                set_active: true})
+    error_msg = 'Hmmm, looks like something went terribly wrong. Ping @bmoreonrails for help.'
     if response.response.code  == 200
       body = JSON.parse(response.body)
       if body["ok"]
@@ -10,12 +11,14 @@ class SlackController < ApplicationController
       elsif body["error"] == 'already_invited'
         flash[:error] = 'Yikes, looks like you were already invited... check your email.'
       else
-        flash[:error] = 'Hmmm, looks like something went terribly wrong. Ping @bmoreonrails for help.'
+        flash[:error] = error_msg
       end
     else
-      flash[:error] = 'Hmmm, looks like something went terribly wrong. Ping @bmoreonrails for help.'
+      flash[:error] = error_msg
     end
-
+  rescue Exception => e
+    flash[:error] = error_msg
+  ensure
     redirect_to root_path
   end
 
