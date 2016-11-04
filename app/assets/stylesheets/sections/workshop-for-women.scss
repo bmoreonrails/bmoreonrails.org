@@ -1,0 +1,49 @@
+#workshop-for-women-leader {
+  margin: 1em auto;
+  width: 60%;
+
+  .logo {
+    vertical-align: top;
+    margin: 0;
+  }
+
+  .description {
+    h1 { font-size: 24px; }
+    padding: 1em 0;
+    vertical-align: top;
+  }
+}
+
+#workshop-for-women {
+  font-size: 16px;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  h3 {
+    margin: 1em 0 0.5em;
+  }
+
+  h4 {
+    margin-top: 0.5em;
+
+    .time {
+      font-size: 0.7em;
+      font-weight: 100;
+    }
+
+    .description {
+      font-size: 0.9em;
+      font-weight: 400;
+      font-family: "Helvetica Neue", "Helvetica", "Arial", "Sans-Serif";
+    }
+  }
+
+  .day {
+    background: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+  }
+}
