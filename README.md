@@ -29,11 +29,14 @@ The member list is in `config/members.yml`. To add yourself to the list, append 
   github_name: 'your_github_handle'
   twitter:     'your_twitter_handle'
   avatar_file: 'your_avatar.jpg'
+  email:       'makes@gravatar.work'
 ```
 
 The `avatar_file` field is a 200x200-pixel picture of you. If you have ImageMagick installed, you can find a command to resize your image in the ["Convert member images to square thumbnails"](https://github.com/bmoreonrails/bmoreonrails.org#convert-member-images-to-square-thumbnails) section at the bottom of this README.
 
 It needs to be in the `app/assets/images/members` directory to be displayed.
+
+If you have your Gravatar set up you can ignore the avatar file instructions and just specify the `email` field and your image will get pulled from Gravatar! It's really convenient, so go check it out if you haven't already: ["Get Gravatar"](http://en.gravatar.com/)
 
 ## Deployment instructions
 

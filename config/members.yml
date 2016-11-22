@@ -156,9 +156,14 @@
   name:        'Olivia Brundage'
   github_name: 'foxiae'
   twitter:     'dothecodeolivia'
-  avatar_file:  'olivia_brundage_2016.jpg'
+  avatar_file: 'olivia_brundage_2016.jpg'
 -
   name:        "Alice Kallaugher"
   github_name: 'kallaugher'
   twitter:     'kallaugher'
   avatar_file: 'alice.jpg'
+-
+  name:        "Oren Mittman"
+  github_name: 'nihil2501'
+  twitter:     'nihil2501'
+  email:       'nihil2501@gmail.com'
