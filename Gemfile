@@ -16,6 +16,7 @@ gem 'turbolinks'
 gem 'faraday'
 gem 'hashie'
 gem 'httparty'
+gem 'gravatar_image_tag'
 
 group :doc do
   gem 'sdoc', require: false
