@@ -47,3 +47,27 @@
     top: 0px;
   }
 }
+
+#sponsors {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 2em auto;
+    padding: 0;
+  }
+
+  #presented-by {
+    .logo {
+      width: 100%;
+    }
+  }
+
+  #sponsored-by {
+    .logo {
+      width: 65%;
+    }
+  }
+}
