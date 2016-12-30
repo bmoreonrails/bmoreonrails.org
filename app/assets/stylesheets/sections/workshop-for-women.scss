@@ -48,7 +48,7 @@
   }
 }
 
-#sponsors {
+#workshop-sponsors {
   ul {
     list-style: none;
     padding: 0;
@@ -66,8 +66,7 @@
   }
 
   #sponsored-by {
-    .logo {
-      width: 65%;
-    }
+    .first-level  { width: 80%; }
+    .second-level { width: 65%; }
   }
 }
