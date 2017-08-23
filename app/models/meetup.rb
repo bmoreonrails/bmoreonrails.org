@@ -1,5 +1,5 @@
 class Meetup < ActiveRecord::Base
-  UPCOMING_EVENTS_URL = 'http://api.meetup.com/2/events?group_id=347566&status=upcoming&order=time&limited_events=False&desc=false&offset=0&format=json&page=20&fields=&time=%2C5w&sig_id=9347737&sig=f6274cfd7bf5c34df7ec77400585d13b00a0666e'
+  UPCOMING_EVENTS_URL = 'https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_id=347566&page=20&time=%2C5w&fields=&order=time&status=upcoming&desc=false&sig_id=11618449&sig=c6ee2ab0360a1f1cee5024d5e34dd8b26d5df9ab'
 
   scope :upcoming, -> { where('time > now()').order('time ASC') }
 
