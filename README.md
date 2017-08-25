@@ -53,3 +53,19 @@ This command requires that you have ImageMagick installed on your machine. If yo
 To resize one image:
 
     convert -define jpeg:size=200x200 original_avatar.jpg -thumbnail 200x200^ -gravity center -extent 200x200  your_avatar.jpg
+
+### Meetup integration
+
+#### API key management
+
+We use an ["API key signed URL"](https://www.meetup.com/meetup_api/auth/#keysign) to pull meetups from our meetup page onto the site. If this key is removed, a brave soul will be tasked with forming a new `UPCOMING_EVENTS_URL` in the Meetup model. This is accomplished by:
+
+1) ["Getting or generating your API key"](https://secure.meetup.com/meetup_api/key/) from meetup.
+2) Making the desired request with your API key: https://api.meetup.com/2/events?key=(YOUR_KEY_HERE)&group_id=347566&sign=true&status=upcoming&order=time&limited_events=False&desc=false&offset=0&format=json&page=20&fields=&time=%2C5w
+3) Update the `UPCOMING_EVENTS_URL` in the Meetup model using the `signed_url` returned in the meta response
+
+You shouldn't update the `UPCOMING_EVENTS_URL` value with the URL you use in step 2 because that contains your API key, which anyone can use to make authorized requests against the meetup API, as well as to pull information from YOUR meetup account.
+
+#### Updating meetups in development
+
+In production meetups are updated with a scheduled job, in order to update the meetups locally you have to use the rake task `rake update_meetups`.
