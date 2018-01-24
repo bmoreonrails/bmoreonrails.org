@@ -7,6 +7,8 @@
     %a.twitter.icon{href: '#twitter', title: 'Twitter'}
   %li
     %a.map.icon{href: '#location', title: 'Where to Find Us'}
+  %li
+    %a.slack.icon{href: '#slack-invite', title: 'Join us in Slack'}
 
 %article
   %section#team
@@ -23,6 +25,18 @@
         - pixes.each do |pix|
           .pixel
             = member_avatar @members.shift if pix
+
+  #slack-invite
+    %section
+      .container
+        .column18.line
+          %h2.slack.icon
+        .column5
+        .column9
+          %p B'more on Rails members regularly hang out in Slack, enter your email below to get an invite and come say "hi"!
+          = form_tag slack_invite_url do
+            = email_field_tag :email, '', placeholder: "your email address"
+            = submit_tag 'Get Your Invite!'
 
   #calendar.large-content
     %section

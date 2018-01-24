@@ -21,9 +21,14 @@
               %li#join
                 %a{href: 'http://www.meetup.com/bmore-on-rails', title: 'Our Meetup Page'} Join Us on Meetup!
               %li#join
-                %a{href: pages_school_path, title: 'school'} School
+                %a{href: 'https://ti.to/bmore-on-rails-workshop-for-women/2017', title: 'school'} School
               %li#join
                 %a{href: root_path, title: 'home'} Home
+
+      - unless flash.empty?
+        - flash.keys.each do |k|
+          .column18.flashContainer{class: k}
+            %p= flash[k]
 
       = yield
 

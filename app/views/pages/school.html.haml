@@ -1,98 +1,93 @@
 - content_for :head do
   %meta(name="description" content="This two day workshop put together by the B'more on Rails crew is an opportunity for women to learn about the basics of Ruby on Rails. We'll guide you through building an application that's accessible through the web and backed by a database. You'll walk away with the resources and tools to continue making super rad web applications. If you can check e-mail and use google, you can take this class. No previous development experience necessary.")
 %article.desktop-only
-  %section#team
-    #leader
-      .column5
-        = image_tag 'logomark.svg', alt: 'logo mark', id: 'logomark'
-      .column12
+  %section
+    #workshop-for-women-leader
+      .logo.column5
+        = image_tag 'logomark.svg', alt: 'logo mark', id: 'logomark', style: "width:182px; height:165px"
+      .description.column7
         %h1
           Bmore on Rails is a community of Baltimore folks who use the Ruby programming language and the Ruby on Rails framework.
-%article
+%article#workshop-for-women
   #event-details.large-content
-    %section
+    %section#schedule
       .container
         .column11.offset1
           .line
             %h2.calendar.icon
-          %h2
-            Workshop for Women
+          %h2 Workshop for Women
           %h3
-            Feb 19-20 2016
+            Feb 17-18, 2017
             %a{href: 'https://www.google.com/maps/place/Betamore/@39.276833,-76.612088,15z/data=!4m2!3m1!1s0x0:0x6d2528150bed1e5e', title: 'At Betamore'} @ Betamore
-          %p
-            Come learn about the basics of programming with Ruby on Rails. During this two day workshop, The B'more on Rails crew will guide through building and deploying a web application. You'll walk away with the resources and tools to continue programming for the internet.
-          %h3
-            Friday Installfest
-          %p
-            7:00pm - 9:00pm
-          %p
-            We'll work together to set up your computer with the necessary tools and explore the command line a little.
-            Bring your computer and a charger. Extra extension cords are also helpful if you have one to spare.
-          %h3
-            Saturday Workshop
-          %p
-            The big day. Saturday will be focused on getting your Ruby on Rails application built and launched.
-          %p
-            8:30am - 9:00am | Registration, coffee, & last-minute installation help
-          %p
-            During the morning you'll have the opportunity to mingle with the other participants and the coaches.
-          %p
-            9:00am - 9:30am | Welcome to B'More on Rails
-          %p
-            We'll review the day's schedule & hear from our sponsors.
-          %p
-            9:30am - 12:00pm | The building begins!
-          %p
-            We'll review command line and start programming.
-            (This includes a 15-minute break.)
-          %p
-            12:00pm - 1:00pm | Lunch!
-          %p
-            Coders need to eat. We'll have soups and sandwiches with vegetarian options.
-          %p
-            1:00pm - 4:30pm | Making Progress
-          %p
-            We'll continue working on our applications, covering terminology, ruby and the command line as needed. We may not all finish building our applications - but everyone should have the tools and knowledge to continue after the workshop.
-            (Includes another a 15-minute break.)
-          %p
-            4:30pm - 5:00pm | Last Hurah!
-          %p
-            Another big shout out to all the coders and sponsors who made the day a success!
-          %p
-            5:00pm - 7:00pm | Afterparty
-          %p
-            After the workshop, walk over to Mothers Grille to hang with the local Rails community and nom on some delish heavy apps.
+          %p Come learn about the basics of programming with Ruby on Rails. During this two day workshop, The B'more on Rails crew will guide through building and deploying a web application. You'll walk away with the resources and tools to continue programming for the internet.
+
+          %h3.day Friday Installfest
+          %h4
+            .time 7:00pm - 9:00pm
+          %p We'll work together to set up your computer with the necessary tools and explore the command line a little. Bring your computer and a charger. Extra extension cords are also helpful if you have one to spare.
+
+          %h3.day Saturday Workshop
+          %p The big day. Saturday will be focused on getting your Ruby on Rails application built and launched.
+          %h4
+            .time 8:30am - 9:00am
+            .description Registration, coffee, &amp; last-minute installation help
+          %p During the morning you'll have the opportunity to mingle with the other participants and the coaches.
+
+          %h4
+            .time 9:00am - 9:30am
+            .description Welcome to B'more on Rails
+          %p We'll review the day's schedule &amp; hear from our sponsors.
+
+          %h4
+            .time 9:30am - 12:00pm
+            .description The building begins!
+          %p We'll review command line and start programming. (This includes a 15-minute break.)
+
+          %h4
+            .time 12:00pm - 1:00pm
+            .description Lunch!
+          %p Coders need to eat. We'll have soups and sandwiches with vegetarian options.
+
+          %h4
+            .time 1:00pm - 4:30pm
+            .description Making Progress
+          %p We'll continue working on our applications, covering terminology, ruby and the command line as needed. We may not all finish building our applications - but everyone should have the tools and knowledge to continue after the workshop. (Includes another a 15-minute break.)
+
+          %h4
+            .time 4:30pm - 5:00pm
+            .description Last Hurrah!
+          %p Another big shout out to all the coders and sponsors who made the day a success!
+
+          %h4
+            .time 5:00pm - 7:00pm
+            .description Afterparty
+          %p After the workshop, walk over to Mothers Grille to hang with the local Rails community and nom on some delish heavy apps.
 
           %div.sign-up-links
             %h1
-              %a{href: 'https://ti.to/bmore-on-rails-workshop-for-women/2016', title: 'Sign Up Here!'} Sign Up Here!
+              %a{href: 'https://ti.to/bmore-on-rails-workshop-for-women/2017', title: 'Sign Up Here!'} Sign Up Here!
             %h3
               Follow Us:
               = link_to '@BmorRailsSchool', 'https://twitter.com/BmorRailsSchool?lang=en'
 
-        .column6.line-mobile
+        #workshop-sponsors.column6.line-mobile
           .line
             %h2.sponsors.icon
-          %h3.border-text Presented By Staq
-          %a{href: 'http://www.staq.com/', title: 'staq'}
-            = image_tag 'STAQ.jpg', alt: 'Staq logo', class: 'logo'
-          %h3.border-text Sponsored By:
-          %a{href: 'http://www.allovue.com/', title: 'Allovue'}
-            = image_tag 'Allovue.png', alt: 'Allovue', class:'logo'
-          %a{href: 'http://smartlogicsolutions.com/', title: 'smartlogic'}
-            = image_tag 'smartlogic_275.png', alt: 'Smart Logic Logo', class: 'logo'
-          %a{href: 'http://www.eeecomputes.com/', title: 'eeecomputes'}
-            = image_tag 'eee_computes.png', alt: 'eee-computes', class:'logo'
-        -#   %a{href: 'https://www.traitify.com/', title: 'traitify'}
-        -#     = image_tag 'traitify_logo_blue.png', class: 'logo logo-border'
-        -#   %a{href: 'http://www.lmo.com/', title: 'lmo'}
-        -#     = image_tag 'lmo.png', alt: 'LMO logo', class: 'logo'
-        -#   %a{href: 'http://lgscout.com/', class: 'logo'}
-        -#     = image_tag 'lookingglass.png', alt: 'Lookingglass logo', class: 'logo'
-        -#   %a{href: 'http://www.livingsocial.com/', title: 'Living Social'}
-        -#     = image_tag 'livingsocial.jpeg', alt: 'Living Social logo', class: 'logo'
-        -#   %a{href: 'http://betamore.com/', title: 'betamore'}
-        -#     = image_tag 'betamore_logo.png', alt: 'Betamore Logo', class: 'logo'
+          %h3 Presented By:
+          %ul#presented-by
+            %li
+              %a{href: 'http://www.staq.com/', title: 'STAQ'}= image_tag 'staq.png', alt: 'Staq', class: 'logo'
+          %h3 Sponsored By:
+          -# %a{href: 'http://www.allovue.com/', title: 'Allovue'}= image_tag 'Allovue.png', alt: 'Allovue', class:'logo'
+          %ul#sponsored-by
+            %li
+              %a{href: 'http://smartlogic.io/', title: 'Smartlogic'}= image_tag 'smartlogic_275.png', alt: 'Smartlogic', class: 'logo first-level'
+            %li
+              %a{href: 'http://www.eeecomputes.com/', title: 'EEE Computes'}= image_tag 'eee_computes.png', alt: 'EEE Computes', class:'logo second-level'
+          -# %a{href: 'https://www.traitify.com/', title: 'traitify'}= image_tag 'traitify_logo_blue.png', class: 'logo logo-border'
+          -# %a{href: 'http://www.lmo.com/', title: 'lmo'}= image_tag 'lmo.png', alt: 'LMO logo', class: 'logo'
+          -# %a{href: 'http://lgscout.com/', class: 'logo'}= image_tag 'lookingglass.png', alt: 'Lookingglass logo', class: 'logo'
+          -# %a{href: 'http://www.livingsocial.com/', title: 'Living Social'}= image_tag 'livingsocial.jpeg', alt: 'Living Social logo', class: 'logo'
+          -# %a{href: 'http://betamore.com/', title: 'betamore'}= image_tag 'betamore_logo.png', alt: 'Betamore Logo', class: 'logo'
 
     = render 'layouts/locations'

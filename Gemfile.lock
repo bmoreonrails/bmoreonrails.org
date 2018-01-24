@@ -59,6 +59,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    gravatar_image_tag (1.2.0)
     haml (4.1.0.beta.1)
       tilt
     haml-rails (0.7.0)
@@ -75,6 +76,8 @@ GEM
       haml (>= 4.0.0.rc.1)
       hpricot (~> 0.8.6)
       ruby_parser (~> 3.1.1)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
@@ -90,6 +93,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
     multipart-post (2.0.0)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
@@ -192,8 +196,10 @@ PLATFORMS
 DEPENDENCIES
   capybara
   faraday
+  gravatar_image_tag
   haml-rails
   hashie
+  httparty
   jquery-rails
   pg
   pry-rails
