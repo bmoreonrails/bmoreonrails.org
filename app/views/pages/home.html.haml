@@ -36,6 +36,8 @@
           %p B'more on Rails members regularly hang out in Slack, enter your email below to get an invite and come say "hi"!
           = form_tag slack_invite_url do
             = email_field_tag :email, '', placeholder: "your email address"
+            .text-xs-center
+              = recaptcha_tags
             = submit_tag 'Get Your Invite!'
 
   #calendar.large-content

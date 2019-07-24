@@ -29,5 +29,21 @@
       font-size: 80%;
       cursor: pointer;
     }
+
   }
+}
+.text-xs-center {
+  width: 225px;
+  height: 85px;
+  margin: 20px auto 0;
+}
+.g-recaptcha {
+  padding: 10px;
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  display: inline-block;
+  width: 304px;
+  margin: 0 auto;
 }
