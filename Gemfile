@@ -17,6 +17,7 @@ gem 'faraday'
 gem 'hashie'
 gem 'httparty'
 gem 'gravatar_image_tag'
+gem 'recaptcha'
 
 group :doc do
   gem 'sdoc', require: false
