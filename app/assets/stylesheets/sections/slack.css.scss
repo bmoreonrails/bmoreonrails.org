@@ -1,12 +1,15 @@
 #slack-invite {
   margin-top: 2em;
   text-align: center;
+  a {
+    text-decoration: underline;
+  }
   p {
     color: $red;
     font-family: EB Garamond, $serif;
     font-size: 180%;
     line-height: 1.25em;
-    text-align: left;
+    text-align: center;
   }
   form {
     color: $red;
@@ -24,7 +27,7 @@
     input[type=submit] {
       border: none;
       background-color: $red;
-      color: #ffffff;      
+      color: #ffffff;
       padding: 10px;
       font-size: 80%;
       cursor: pointer;
