@@ -39,11 +39,6 @@
             Send us an email at <a href='mailto:bmoreonrails@gmail.com?subject=Slack Invite Request'>bmoreonrails@gmail.com</a>
             %br
             to receive an invite and come say "hi"!
-          -#= form_tag slack_invite_url do
-            = email_field_tag :email, '', placeholder: "your email address"
-            .text-xs-center
-              = recaptcha_tags
-            = submit_tag 'Get Your Invite!'
 
   #calendar.large-content
     %section
