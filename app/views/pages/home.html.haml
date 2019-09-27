@@ -31,14 +31,14 @@
       .container
         .column18.line
           %h2.slack.icon
-        .column5
-        .column9
-          %p B'more on Rails members regularly hang out in Slack, enter your email below to get an invite and come say "hi"!
-          = form_tag slack_invite_url do
-            = email_field_tag :email, '', placeholder: "your email address"
-            .text-xs-center
-              = recaptcha_tags
-            = submit_tag 'Get Your Invite!'
+        .column3
+        .column12
+          %p
+            B'more on Rails members regularly hang out in Slack.
+            %br
+            Send us an email at <a href='mailto:bmoreonrails@gmail.com?subject=Slack Invite Request'>bmoreonrails@gmail.com</a>
+            %br
+            to receive an invite and come say "hi"!
 
   #calendar.large-content
     %section
